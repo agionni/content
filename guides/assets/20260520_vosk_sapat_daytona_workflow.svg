@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="420" viewBox="0 0 1120 420" role="img" aria-labelledby="title desc">
+  <title id="title">Vosk Sapat Daytona workflow</title>
+  <desc id="desc">A workflow from a source recording to a Daytona workspace, local Vosk model, Sapat command, transcript output, and review packet.</desc>
+  <rect width="1120" height="420" fill="#f8fafc"/>
+  <g font-family="Arial, sans-serif">
+    <text x="56" y="56" font-size="30" font-weight="700" fill="#111827">Offline Vosk transcription in Daytona</text>
+    <text x="56" y="88" font-size="16" fill="#475569">Keep the audio, model, commands, and review artifacts inside one reproducible workspace.</text>
+    <g transform="translate(56 140)">
+      <rect width="170" height="112" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+      <text x="22" y="42" font-size="17" font-weight="700" fill="#111827">Recording</text>
+      <text x="22" y="70" font-size="13" fill="#475569">MP4, MOV, WAV, or</text>
+      <text x="22" y="90" font-size="13" fill="#475569">meeting export</text>
+    </g>
+    <path d="M248 196h72" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+    <g transform="translate(340 140)">
+      <rect width="170" height="112" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+      <text x="22" y="42" font-size="17" font-weight="700" fill="#111827">Daytona</text>
+      <text x="22" y="70" font-size="13" fill="#475569">Clone Sapat and keep</text>
+      <text x="22" y="90" font-size="13" fill="#475569">env vars local</text>
+    </g>
+    <path d="M532 196h72" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+    <g transform="translate(624 140)">
+      <rect width="170" height="112" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
+      <text x="22" y="42" font-size="17" font-weight="700" fill="#111827">Vosk model</text>
+      <text x="22" y="70" font-size="13" fill="#475569">Local model path via</text>
+      <text x="22" y="90" font-size="13" fill="#475569">VOSK_MODEL_PATH</text>
+    </g>
+    <path d="M816 196h72" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+    <g transform="translate(908 140)">
+      <rect width="170" height="112" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
+      <text x="22" y="42" font-size="17" font-weight="700" fill="#111827">Transcript</text>
+      <text x="22" y="70" font-size="13" fill="#475569">Sidecar .txt plus</text>
+      <text x="22" y="90" font-size="13" fill="#475569">review checklist</text>
+    </g>
+    <rect x="300" y="300" width="520" height="58" rx="8" fill="#111827"/>
+    <text x="326" y="336" font-family="Menlo, Consolas, monospace" font-size="16" fill="#e5e7eb">sapat demo.mp4 --api vosk --quality M --language en</text>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>
